@@ -3,10 +3,146 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bailey W Taylor | Portfolio</title>
+  <title>Bailey W. Taylor | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Bailey W. Taylor</h1>
-  <p>Portfolio (in progress).</p>
+  <!-- Header / Nav -->
+  <header>
+    <h1>Bailey W. Taylor</h1>
+    <nav>
+      <a href="#projects">Projects</a> | <!-- Link later when finished-->
+      <a href="#skills">Skills</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p>
+      <a href="https://github.com/baileywtaylor" target="_blank" rel="noreferrer">GitHub</a>
+      |
+      <a href="https://www.linkedin.com/in/bailey-w-taylor/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </p>
+
+    <hr />
+  </header>
+
+  <main>
+    <!-- Hero / About -->
+    <section>
+      <h2>About</h2>
+      <p class="intro">
+        Hi, I'm Bailey Taylor
+      </p>
+
+      <p class="subintro">
+        I'm a final-year student at The University of Technology Sydney, majoring in Enterprise Systems Development and Networking and Cybersecurity.
+      </p>
+
+      <p>
+        <a href="#projects">Let’s explore ↓</a>
+      </p>
+      <hr />
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <article>
+        <h3>WIP</h3>
+        <p>
+          Currently building, will update when ready.
+        </p>
+</article>
+
+      <hr />
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++ (coursework)</li>
+            <li>C# (.NET)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>SQL</li>
+            <li>RESTful API development</li>
+            <li>Modular backend services</li>
+            <li>Relational data modelling</li>
+            <li>Performance-aware API design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Cloud & DevOps</h3>
+          <ul>
+            <li>AWS (EC2, RDS, Elastic Beanstalk)</li>
+            <li>Azure DevOps CI/CD</li>
+            <li>Git / GitHub</li>
+            <li>Deployment automation concepts</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Architecture & Systems</h3>
+          <ul>
+            <li>Scalable SaaS system design</li>
+            <li>Environment configuration</li>
+            <li>Security group configuration</li>
+            <li>Distributed systems fundamentals (private Ethereum network)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Engineering Practices</h3>
+          <ul>
+            <li>Agile delivery</li>
+            <li>Peer code review</li>
+            <li>Iterative refinement</li>
+            <li>Third-party API integration</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:baileytpersonal@gmail.com">baileytpersonal@gmail.com</a></p>      
+      <p>GitHub: <a href="https://github.com/baileywtaylor" target="_blank" rel="noreferrer">@baileywtaylor</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bailey-w-taylor/" target="_blank" rel="noreferrer">Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>© <span id="year"></span> Bailey W. Taylor</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
