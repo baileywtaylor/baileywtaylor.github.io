@@ -48,10 +48,36 @@
     <section id="projects">
       <h2>Featured Projects</h2>
       <article>
-        <h3>WIP</h3>
-        <p>
-          Currently building, will update when ready.
-        </p>
+  <p><strong>JobFit Automator</strong></p>
+
+  <h3>
+    AI-assisted CLI tool that extracts structured job data,
+    ranks roles deterministically, and generates a shortlist report.
+  </h3>
+
+  <p><strong>Highlights:</strong></p>
+  <ul>
+    <li>
+      Built a Python CLI that ingests job advertisements from
+      jobs_inbox/*.txt and converts them into structured
+      JobPosting models using Pydantic.
+    </li>
+    <li>
+      Implemented optional OpenAI-powered extraction to identify job
+      attributes such as title, company, responsibilities, and key skills,
+      with SHA256 caching to prevent repeated API calls.
+    </li>
+    <li>
+      Developed a deterministic scoring engine using a configurable
+      keyword rubric (profile.yaml) to rank opportunities
+      and generate a Markdown report summarising job matches.
+    </li>
+  </ul>
+
+  <p>
+    Python | OpenAI API | Pydantic | python-dotenv | PyYAML | <a href="https://github.com/baileywtaylor/jobfit-automator" target="_blank" rel="noreferrer"> GitHub </a>
+  </p>
+  
 </article>
 
       <hr />
